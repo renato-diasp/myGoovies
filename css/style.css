@@ -83,6 +83,10 @@ body{
   font-weight: 700;
 }
 
+.menu li a{
+  color: var(--color-text-nav);
+}
+
 .menu li a:visited{
   color: var(--color-text-nav);
 }
