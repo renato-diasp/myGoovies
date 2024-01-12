@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,800&display=swap');
+
+:root{
+  /* Cores dos backgrounds: */
+  --background-body: #D9D6D0;
+  --background-nav: #2B3840;
+  --color-icons: #BFBDB8;
+  
+  /* Cores das fontes */
+  --color-text: #2B3840;
+  --color-text-nav: #D9D6D0;
+
+  /* Fontes */
+  --font-all: 'Raleway', sans-serif;
+  
+}
+
+/* Configurações gerais */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; 
+  font-family: var(--font-all);  
+}
+
+body{
+  background-color: var(--background-body);
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Estilização do cabeçalho */
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.cabecalho h1{ 
+  font-family: var(--font-all);
+  color: var(--color-text);
+  font-size: 60px;
+  font-weight:500;
+  font-style: italic; 
+ }
+
+ .login{
+  background-color: var(--background-nav);
+  border-radius: 10px 0 0 10px;
+  width: 15%;
+  height: 7vh;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .login a{
+  font-family: var(--font-all);
+  color: var(--color-text-nav);
+  text-align: center;
+ }
+
+/* Fim estilização cabeçalho */
+
+/* Menu de navegação */
+
+.menu{
+  background-color: var(--background-nav);
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 10px;
+}
+
+.menu li{
+  list-style: none;  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu li a{
+  color: var(--color-text-nav);
+}
+
+.menu li a:visited{
+  color: var(--color-text-nav);
+}
+
+/* fim menu de navegação */
+
+/* Estilização Principal */
+
+.principal{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.principal h2{  
+  font-style:italic;
+}
+
+.principal input{
+  width: 60%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 2px solid var(--background-nav);
+  border-radius: 10px;
+  background: var(--background-body);
+}
+
+.principal ::placeholder{
+  text-align: center;
+}
+
+/* fim estilização Principal */
+
+/* Estilização destaques */
+.destaques{
+  text-align: center;
+  font-style: italic;
+  font-size: 25px;
+
+  margin-top: 55px;
+}
+
+.destaques img{
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+/* fim estilização destaques */
+
+/* Estilização estreias e filmes em cartaz */
+
+section h3{
+  font-style: italic;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.cards{
+  display: flex;  
+  justify-content: space-around; 
+}
+
+.cards img{
+  transition: 0.5s;
+}
+
+.cards img:hover{
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+/* fim estilização estreias e filmes em cartaz */
+
+/* Estilização rodapé */
+.rodape{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rodape a{
+  margin: 10px;
+  padding: 10px;
+}

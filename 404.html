@@ -5,59 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Seu maior Database de Filmes">
   <meta name="keywords" content="Filmes, Sinopse, Títulos">
+
+  <link rel="stylesheet" href="./css/style.css">
   <title>Goovies - Home</title>
 </head>
 <body>
   <div class="container">
     <!-- Cabeçalho do site -->
-    <header>
-      <h1>GOOVIES</h1>
-      <a href="./pages/login.html">Login ou cadastro</a>
+    <header class="cabecalho">
+      <a href="./index.html"><h1>Goovies</h1></a>
+      <div class="login">
+        <a href="./pages/login.html"><img src="./images/icones/login.svg" alt="Botão de Login"></a>
+        <a href="./pages/login.html">Login ou <p>cadastro</p></a>
+      </div>
     </header>
 
    <!-- Menu de navegação -->
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="./pages/noticias.html">Notícias</a></li>
-        <li>Novidades</li>
-        <li>Trailers</li>
-        <li>Ingressos</li>
+        <li><a href="#">Novidades</a></li>
+        <li><a href="#">Trailers</a></li>
+        <li><a href="#">Ingressos</a></li>
       </ul>
     </nav>
 
     <!-- Principal, consumo da API -->
-    <main>
+    <main class="principal">
       <h2>Já sabe por onde começar?</h2>
       <p>Encontre em nosso site todos os filmes da atualidade</p>
       <input type="text" placeholder="Ex: Duna 2">
     </main>
 
     <!-- Seção de destaques  - Carousel Images-->
-    <section>
+    <section class="destaques">
       <h2>Destaques</h2>
-      <img src="./images/imgmain/duna 1.png" alt="Filme Duna 2">
+      <a href="#"><img src="./images/imgmain/duna 1.png" alt="Filme Duna 2"></a>
     </section>
 
     <!-- Estreias da Semana -->
     <section>
-      <h3>Estreias da Semana</h3>    
-      <a href="#"><img src="./images/cards/batman.png" alt="Batman"></a>
+      <h3>Estreias da Semana</h3>
+      <div class="cards">
+       <a href="#"><img src="./images/cards/batman.png" alt="Batman"></a>
       <a href="#"><img src="./images/cards/oppenheimer.png" alt="Oppenheimer"></a>
       <a href="#"><img src="./images/cards/avatar.png" alt="Avatar"></a>
-      <a href="#"><img src="./images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>      
+      <a href="#"><img src="./images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>  
+      </div> 
     </section>
 
     <!-- Em cartaz -->
     <section>
       <h3>Em cartaz</h3>
+      <div class="cards">
       <a href="#"><img src="./images/cards/batman.png" alt="Batman"></a>
       <a href="#"><img src="./images/cards/oppenheimer.png" alt="Oppenheimer"></a>
       <a href="#"><img src="./images/cards/avatar.png" alt="Avatar"></a>
-      <a href="#"><img src="./images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a> 
+      <a href="#"><img src="./images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>  
+      </div>
     </section>
 
     <!-- Rodapé -->
-    <footer>
+    <footer class="rodape">
       <a href="#">Termos de uso</a>
       <a href="#">Política de Privacidade</a>
       <a href="#">Termos de uso</a>
