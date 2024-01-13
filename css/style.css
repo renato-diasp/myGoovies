@@ -30,7 +30,7 @@ body{
   margin: 0 auto;
 }
 
-
+/* ----------------------------------------------Estilização da HOME------------------------------------------------------- */
 /* Menu de navegação */
 
 nav{
@@ -150,7 +150,14 @@ nav{
 section h3{
   font-style: italic;
   font-size: 35px;
-  margin: 20px 0;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+section p{
+  font-style: italic;
+  font-size: 20px ;
+  margin-bottom: 15px;
   padding: 10px;
 }
 
@@ -172,3 +179,9 @@ section h3{
 }
 /* fim estilização estreias e filmes em cartaz */
 
+/* -------------------------------------------- FIM Estilização da HOME--------------------------------------------------- */
+
+/* ---------------------------------------------Estilização favoritos------------------------------------------------------ */
+.cards-fav{
+  margin-bottom: 10px;
+}
