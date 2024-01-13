@@ -67,6 +67,10 @@ body{
   font-size: 20px;
  }
 
+ .login a:hover{
+  text-decoration: underline;
+ }
+
 /* Fim estilização cabeçalho */
 
 /* Menu de navegação */
@@ -94,10 +98,16 @@ nav{
 .menu li a{
   color: var(--color-text-nav);
   font-size: 25px;
+  border-bottom: 1px solid transparent;
 }
 
 .menu li a:visited{
   color: var(--color-text-nav);
+}
+
+.menu li a:hover{
+  border-bottom: 2px solid var(--color-text-nav);
+  transition: border-bottom 0.3s ease-in-out;  
 }
 
 /* fim menu de navegação */
