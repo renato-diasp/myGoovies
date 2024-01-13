@@ -71,6 +71,11 @@ body{
 
 /* Menu de navegação */
 
+nav{
+  position: sticky;
+  top: 0px;
+}
+
 .menu{
   background-color: var(--background-nav);
   display: flex;
@@ -117,17 +122,33 @@ body{
 
 .principal input{
   width: 60%;
-  padding: 15px;
+  padding: 10px;
   margin-top: 15px;
   border: 2px solid var(--background-nav);
   border-radius: 10px;
   background: var(--background-body);
+
+  font-size: 25px;
 }
 
 .principal ::placeholder{
   text-align: center;
   padding: 10px;
   font-size: 20px;
+}
+
+.principal button{
+  position: relative;
+  top: -60px;
+  right: -365px;
+
+  border: none;
+  background-color: var(--background-body);
+ 
+}
+
+.principal button:hover{
+  cursor: pointer;
 }
 
 /* fim estilização Principal */
