@@ -52,7 +52,7 @@ body{
  .login{
   background-color: var(--background-nav);
   border-radius: 10px 0 0 10px;
-  width: 12%;  
+  width: 15%;   
   display: flex;
   gap: 10px;
   justify-content: center;
