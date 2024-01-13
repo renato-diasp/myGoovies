@@ -26,13 +26,9 @@
 
 body{
   background-color: var(--background-body);
-}
-
-.container{
   width: 70%;
   margin: 0 auto;
 }
-
 
 
 /* Menu de navegação */
