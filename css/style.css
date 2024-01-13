@@ -58,6 +58,7 @@ body{
   gap: 10px;
   justify-content: center;
   align-items: center;
+  padding: 10px;
  }
 
  .login a{
