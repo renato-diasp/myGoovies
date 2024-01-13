@@ -92,7 +92,7 @@ nav{
 .menu li{
   list-style: none;  
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 700;  
 }
 
 .menu li a{
@@ -140,6 +140,7 @@ nav{
   background: var(--background-body);
 
   font-size: 25px;
+  text-align: center;  
 }
 
 .principal ::placeholder{
