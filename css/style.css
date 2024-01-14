@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,800&display=swap');
-
+@import url(header.css);
+@import url(footer.css);
+@import url(noticias.css);
 :root{
   /* Cores dos backgrounds: */
   --background-body: #D9D6D0;
@@ -21,18 +23,15 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none; 
+  list-style: none;
   font-family: var(--font-all);  
 }
 
 body{
   background-color: var(--background-body);
-}
-
-.container{
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
-
 
 
 /* Menu de navegação */

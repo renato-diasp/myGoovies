@@ -5,101 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Seu maior Database de Filmes">
     <meta name="keywords" content="Filmes, Sinopse, Títulos">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Goovies - noticias</title>
 </head>
 
 <body>
-    <header>
-      <h1>Goovies</h1>
-      <nav>
-      <div>
-          <div>
-            <img src="../images/icones/favorite.svg" alt="Icone de Favoritos" srcset="">
-            <a href="./favoritos.html">Favoritos</a>
-          </div>
+    <!-- Cabeçalho do site -->
+  <header class="cabecalho">
+    <a href="./index.html"><h1>Goovies</h1></a>
+    <div class="login">
+      <a href="./pages/login.html"><img src="../images/icones/login.svg" alt="Botão de Login"></a>
+      <a href="./pages/login.html">Login ou <p>cadastro</p></a>
+    </div>
+  </header>
 
-          <div>
-            <img src="../images/icones/notifications_active.svg" alt="Icone de notificações" srcset="">
-            <a href="#">Notificações</a>
-          </div>
+   <!-- Menu de navegação -->
+  <nav>
+    <ul class="menu">
+      <li><a href="./pages/noticias.html">Notícias</a></li>
+      <li><a href="#">Novidades</a></li>
+      <li><a href="#">Trailers</a></li>
+      <li><a href="#">Ingressos</a></li>
+    </ul>
+  </nav>
 
-          <div>
-            <img src="../images/icones/face.svg" alt="Minha conta" srcset="">
-            <a href="#">Minha conta</a>
-          </div>
-        </div>
-      </nav>
-    </header>        
-    
-    <nav>
-      <ul>
-        <li><a href="noticias.html">Notícias</a></li>
-        <li>Novidades</li>
-        <li>Trailers</li>
-        <li>Ingressos</li>
-      </ul>
-    </nav>
-        
-    <div class="titulo_pagina">
+    <div class="noticias_titulo">
       <h1>NOTÍCIAS DE FILMES E SÉRIES</h1>
     </div>
 
-    <main>
-      <section class="destaque_noticias">
-        <h2>Destaques</h2>
-        <div>
-          <div>
-            <img src="" alt="" srcset="">
+  <main>
+
+    <h1 class="titulos_section">Destaques</h1>
+    <section class="noticias_destaques">
+
+      <div class="noticias_card-1">
+        <a href="#" class="texto_noticia">Filme 2 já  disponivel</a>
+      </div>
+
+      <div class="noticias_card-2">
+
+        <div class="noticias_card-3">
+          <a href="#" class="texto_noticia">Filme 2 já  disponivel</a>
+        </div>
+
+        <div class="noticias_card-4">
+          <a href="#" class="texto_noticia">Filme 2 já  disponivel</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="mais_recentes">
+      <h1 class="titulos_section">Mais recentes</h1>
+      <div class="container_recentes">
+        <div class="recentes_card">
+          <img src="../images/cards/Starwars.png" alt="" srcset="">
+          <div class="texto_noticia-recentes">
+            <a href="#" >
+              Star Wars<br>
+              Star Wars | Rachel Zegler faz piada com retorno de Palpatine após rumor; entenda
+            </a>
           </div>
+        </div>
 
-          <div >
-            <img src="" alt="" srcset="">
+        <div class="recentes_card">
+          <img src="../images/cards/the_mandalorian_serie_disney.jpg" alt="" srcset="">
+          <div class="texto_noticia-recentes">
+            <a href="#">
+              The Mandaloria <br>
+              Para triste dos fãs, pode não ter quarta tempora, diz 
+            </a>
           </div>
-
-          <div >
-            <img src="" alt="" srcset="">
-            </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Mais recentes</h2>
-        <div>
-          <img src="" alt="" srcset="">
-          <a href="">Filme 2 teste</a>
-        </div>
-        
-        <div>
-          <img src="" alt="" srcset="">
-          <a href="">Filme 2 teste</a>
         </div>
 
-        <div>
-          <img src="" alt="" srcset="">
-          <a href="">Filme 2 teste</a>
+        <div class="recentes_card">
+          <img src="../images/cards/eco_topo_Ep9LodP.png" alt="" srcset="">
+          <div class="texto_noticia-recentes">
+            <a href="#">
+              Eco<br>
+              Serie da Marvel estrei em primeiro lugar no Disney+
+            </a>
+          </div>
         </div>
 
-        <div>
-          <img src="" alt="" srcset="">
-          <a href="">Filme 2 teste</a>
+      </div>
+
+        <!--Segunda parte dos mais recentes-->
+
+      <div class="container_recentes">
+
+        <div class="recentes_card">
+          <img src="../images/cards/Starwars.png" alt="" srcset="">
+          <div class="texto_noticia-recentes">
+            <a href="#" >
+              Star Wars<br>
+              Star Wars | Rachel Zegler faz piada com retorno de Palpatine após rumor; entenda
+            </a>
+          </div>
+        </div>
+        <div class="recentes_card">
+          <img src="../images/cards/Starwars.png" alt="" srcset="">
+          <div class="texto_noticia-recentes">
+            <a href="#">
+              Star Wars<br>
+              Star Wars | Rachel Zegler faz piada com retorno de Palpatine após rumor; entenda
+            </a>
+          </div>
         </div>
 
-        <div>
-          <img src="" alt="" srcset="">
-          <a href="">Filme 2 teste</a>
+        <div class="recentes_card">
+          <img src="../images/cards/Starwars.png" alt="" srcset="">
+          <div class="texto_noticia-recentes">
+            <a href="#">
+              Star Wars<br>
+              Star Wars | Rachel Zegler faz piada com retorno de Palpatine após rumor; entenda
+            </a>
+          </div>
         </div>
 
-        <div>
-          <img src="" alt="" srcset="">
-          <a href="">Filme 2 teste</a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-        <a href="#">Termos de uso</a>
-        <a href="#">Política de Privacidade</a>
-        <a href="#">Termos de uso</a>
+      </div>
+    </section>
+    <footer class="rodape">
+      <a href="#">Termos de uso</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de uso</a>
     </footer>
+  </main>
 </body>
 </html>
