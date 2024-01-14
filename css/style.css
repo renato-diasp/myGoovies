@@ -29,9 +29,10 @@
 
 body{
   background-color: var(--background-body);
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
+
 
 
 /* Menu de navegação */
@@ -92,12 +93,19 @@ nav{
   font-size: 20px;
 }
 
-.principal input{
+.submit{ 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit input{ 
   width: 60%;
   padding: 10px;
   margin-top: 15px;
   border: 2px solid var(--background-nav);
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   background: var(--background-body);
 
   font-size: 25px;
@@ -110,17 +118,16 @@ nav{
   font-size: 20px;
 }
 
-.principal button{
-  position: relative;
-  top: -60px;
-  right: -365px;
-
-  border: none;
+.submit button{
+  border: 2px solid;
+  border-radius: 0 10px 10px 0;
   background-color: var(--background-body);
- 
+  margin-top: 15px;
+  padding: 6px;
+  
 }
 
-.principal button:hover{
+.submit button:hover{
   cursor: pointer;
 }
 
@@ -136,7 +143,7 @@ nav{
 }
 
 .destaques img{
-  max-width: 100%;
+  width: 100%;
   margin-top: 15px;
 }
 
@@ -147,7 +154,14 @@ nav{
 section h3{
   font-style: italic;
   font-size: 35px;
-  margin: 20px 0;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+section p{
+  font-style: italic;
+  font-size: 20px ;
+  margin-bottom: 15px;
   padding: 10px;
 }
 
@@ -169,3 +183,17 @@ section h3{
 }
 /* fim estilização estreias e filmes em cartaz */
 
+/* -------------------------------------------- FIM Estilização da HOME--------------------------------------------------- */
+
+/* ---------------------------------------------Estilização favoritos------------------------------------------------------ */
+.cards-fav{
+  margin-bottom: 10px;
+}
+
+#titulo-fav{
+  font-size: 45px;
+}
+
+#prg-fav{
+  font-size: 30px;
+}

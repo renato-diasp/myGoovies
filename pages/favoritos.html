@@ -5,89 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Seu maior Database de Filmes">
     <meta name="keywords" content="Filmes, Sinopse, Títulos">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    
+
     <title>Goovies - Favoritos</title>
 </head>
 <body>
     
-  <header>
-    <h1>Goovies</h1>
-    <nav>
-    <div>
-        <div>
-          <img src="../images/icones/favorite.svg" alt="Icone de Favoritos" srcset="">
-          <a href="#">Favoritos</a>
-        </div>
-
-        <div>
-          <img src="../images/icones/notifications_active.svg" alt="Icone de notificações" srcset="">
-          <a href="#">Notificações</a>
-        </div>
-
-        <div>
-          <img src="../images/icones/face.svg" alt="Minha conta" srcset="">
-          <a href="#">Minha conta</a>
-        </div>
+    <!-- Cabeçalho do site -->
+    <header class="cabecalho">
+      <a href="../index.html"><h1>Goovies</h1></a>
+      <div class="login">
+        <a href="./login.html"><img src="../images/icones/login.svg" alt="Botão de Login"></a>
+        <a href="./login.html">Login ou <p>cadastro</p></a>
       </div>
-    </nav>
-  </header>        
-      
+    </header>
+
+   <!-- Menu de navegação -->
     <nav>
-      <ul>
-        <li><a href="noticias.html">Notícias</a></li>
-        <li>Novidades</li>
-        <li>Trailers</li>
-        <li>Ingressos</li>
+      <ul class="menu">
+        <li><a href="./noticias.html">Notícias</a></li>
+        <li><a href="./favoritos.html">Favoritos</a></li>
+        <li><a href="#">Trailers</a></li>
+        <li><a href="#">Ingressos</a></li>
       </ul>
     </nav>
 
     <main>
-      <div>
-        <h2>Minha lista</h2>
-        <p>Meus filmes e series</p>
-      </div>
+      <section>
+        <h3 id="titulo-fav">Minha lista</h3>
+        <p id="prg-fav">Meus filmes e series</p>
+      </section>
+        
+      
 
       <section>
-        <div> 
-          <a href="#"><img src="../images/cards/batman.png" alt="Batman"></a>
-          <a href="#"><img src="../images/cards/oppenheimer.png" alt="Oppenheimer"></a>
-          <a href="#"><img src="../images/cards/avatar.png" alt="Avatar"></a>
-          <a href="#"><img src="../images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>
-<<<<<<< HEAD
-        </div>
-
-        <div>
-          <a href="#"><img src="../images/cards/batman.png" alt="Batman"></a>
-          <a href="#"><img src="../images/cards/oppenheimer.png" alt="Oppenheimer"></a>
-          <a href="#"><img src="../images/cards/avatar.png" alt="Avatar"></a>
-          <a href="#"><img src="../images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>
-=======
->>>>>>> 51e1cc5590baad8bc16f53ed87393e50d4593f91
-        </div>
-
-        <div>
+        <div class="cards cards-fav"> 
           <a href="#"><img src="../images/cards/batman.png" alt="Batman"></a>
           <a href="#"><img src="../images/cards/oppenheimer.png" alt="Oppenheimer"></a>
           <a href="#"><img src="../images/cards/avatar.png" alt="Avatar"></a>
           <a href="#"><img src="../images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>
         </div>
-<<<<<<< HEAD
-=======
 
-        <div>
+        <div class="cards cards-fav">
           <a href="#"><img src="../images/cards/batman.png" alt="Batman"></a>
           <a href="#"><img src="../images/cards/oppenheimer.png" alt="Oppenheimer"></a>
           <a href="#"><img src="../images/cards/avatar.png" alt="Avatar"></a>
           <a href="#"><img src="../images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>
-        </div>        
->>>>>>> 51e1cc5590baad8bc16f53ed87393e50d4593f91
+        </div>
+
+        <div class="cards cards-fav">
+          <a href="#"><img src="../images/cards/batman.png" alt="Batman"></a>
+          <a href="#"><img src="../images/cards/oppenheimer.png" alt="Oppenheimer"></a>
+          <a href="#"><img src="../images/cards/avatar.png" alt="Avatar"></a>
+          <a href="#"><img src="../images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>
+        </div>      
+
       </section>
     </main>
 
-    <footer>
-      <a href="#">Termos de uso</a>
-      <a href="#">Política de Privacidade</a>
-      <a href="#">Termos de uso</a>
-    </footer>
+<!-- Rodapé -->
+      <footer class="rodape">
+        <a href="#">Termos de uso</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de uso</a>
+      </footer>
 
     
 </body>
