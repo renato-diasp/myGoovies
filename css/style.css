@@ -185,3 +185,11 @@ section p{
 .cards-fav{
   margin-bottom: 10px;
 }
+
+#titulo-fav{
+  font-size: 45px;
+}
+
+#prg-fav{
+  font-size: 30px;
+}
