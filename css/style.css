@@ -198,3 +198,86 @@ section p{
 #prg-fav{
   font-size: 30px;
 }
+/* -------------------------------------------FIM Estilização favoritos----------------------------------------------------*/
+
+/* -------------------------------------------Estilização Login----------------------------------------------------*/
+
+.form-login{
+  background-color:  var(--background-nav);
+  width: 60%;  
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 40px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 30px;
+}
+
+.form-login h2{
+  color: var(--color-text-nav);
+  font-size: 50px;
+}
+
+.form-login p{
+  color: var(--color-text-nav);
+}
+
+.form-login p:first-of-type{
+  font-weight: bold;
+}
+
+.form-login a{
+  color: var(--color-text-nav);
+  text-decoration: underline;
+}
+
+.form-info{
+  width: 80%;
+  
+  
+}
+
+.form-info label{
+  color: var(--color-text-nav);
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+.form-info input{
+  width: 90%;
+  border: 2px solid var(--background-body);
+  border-radius: 10px;
+  padding: 10px;
+
+  background-color: var(--background-nav);
+
+  color: var(--color-text-nav);  
+}
+
+.form-info input::placeholder{
+  color: var(--color-text-nav);
+  font-weight: 100;   
+}
+
+.form-info button{
+  background-color: var(--background-nav);
+  border: none;
+  
+}
+
+.form-info button:hover{
+  cursor: pointer;
+}
+
+.form-senha{
+  display: flex;
+  gap: 5px;
+}
+
+/* ------------------------------------------- FIM Estilização Login----------------------------------------------------*/
