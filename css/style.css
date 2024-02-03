@@ -148,6 +148,14 @@ nav{
   margin-top: 15px;
 }
 
+.destaques-banner{
+  max-width: 100%;
+  width: 100%;
+  height: 322px;
+  object-fit: cover;
+  
+}
+
 /* fim estilização destaques */
 
 /* Estilização estreias e filmes em cartaz */
