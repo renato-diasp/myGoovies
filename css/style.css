@@ -2,6 +2,7 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(noticias.css);
+
 :root{
   /* Cores dos backgrounds: */
   --background-body: #D9D6D0;
