@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seu maior Database de Filmes">
+  <meta name="keywords" content="Filmes, Sinopse, Títulos">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <title>Goovies - Home</title>
+</head>
+<body>
+  
+    <!-- Cabeçalho do site -->
+    <header class="cabecalho">
+      <a href="./index.html"><h1>Goovies</h1></a>
+      <div class="login">
+        <a href="./pages/login.html"><img src="./images/icones/login.svg" alt="Botão de Login"></a>
+        <a href="./pages/login.html">Login ou <p>cadastro</p></a>
+      </div>
+    </header>
+
+   <!-- Menu de navegação -->
+    <nav>
+      <ul class="menu">
+        <li><a href="./pages/noticias.html">Notícias</a></li>
+        <li><a href="./pages/favoritos.html">Favoritos</a></li>
+        <li><a href="./pages/trailer.html">Trailers</a></li>
+        <li><a href="https://www.ingresso.com/" target="_blank">Ingressos</a></li>
+      </ul>
+    </nav>
+
+    <!-- Principal, consumo da API -->
+    <main class="principal">
+      <h2>Já sabe por onde começar?</h2>
+      <p>Encontre em nosso site todos os filmes da atualidade</p>
+      <div class="submit">
+        <input type="text" placeholder="Ex: Duna 2">
+        <button type="submit"><img src="./images/icones/search.svg" alt="Botão de busca para filmes pesquisados"></button>
+      </div>
+      
+    </main>
+
+    
+    
+       <!-- Seção de destaques  - Carousel Images-->
+    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <h2 class="destaques">Destaques</h2>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class=" destaques-banner d-block w-100" src="./images/imgmain/duna 1.png" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class=" destaques-banner  d-block w-100" src="./images/imgmain/duna 1.png" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="destaques-banner d-block w-100" src="./images/imgmain/duna 1.png" alt="Terceiro Slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+    
+
+    <!-- Estreias da Semana -->
+    <section>
+      <h3>Estreias da Semana</h3>
+      <div class="cards">
+       <a href="#"><img src="./images/cards/batman.png" alt="Batman"></a>
+      <a href="#"><img src="./images/cards/oppenheimer.png" alt="Oppenheimer"></a>
+      <a href="#"><img src="./images/cards/avatar.png" alt="Avatar"></a>
+      <a href="#"><img src="./images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>  
+      </div> 
+    </section>
+
+    <!-- Em cartaz -->
+    <section>
+      <h3>Em cartaz</h3>
+      <div class="cards">
+      <a href="#"><img src="./images/cards/batman.png" alt="Batman"></a>
+      <a href="#"><img src="./images/cards/oppenheimer.png" alt="Oppenheimer"></a>
+      <a href="#"><img src="./images/cards/avatar.png" alt="Avatar"></a>
+      <a href="#"><img src="./images/cards/fc.png" alt="A fantástica fábrica de chocolates"></a>  
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <a href="#">Termos de uso</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de uso</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+</body>
+</html>

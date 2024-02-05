@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,800&display=swap');
+@import url(header.css);
+@import url(footer.css);
+@import url(noticias.css);
+
+:root{
+  /* Cores dos backgrounds: */
+  --background-body: #D9D6D0;
+  --background-nav: #2B3840;
+  --color-icons: #BFBDB8;
+  
+  /* Cores das fontes */
+  --color-text: #2B3840;
+  --color-text-nav: #D9D6D0;
+
+  /* Fontes */
+  --font-all: 'Raleway', sans-serif;
+  
+}
+
+/* Configurações gerais */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; 
+  list-style: none;
+  font-family: var(--font-all);  
+}
+
+body{
+  background-color: var(--background-body);
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+
+/* Menu de navegação */
+
+nav{
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.menu{
+  background-color: var(--background-nav);
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 10px;
+}
+
+.menu li{
+  list-style: none;  
+  font-size: 20px;
+  font-weight: 700;  
+}
+
+.menu li a{
+  color: var(--color-text-nav);
+  font-size: 25px;
+  border-bottom: 1px solid transparent;
+}
+
+.menu li a:visited{
+  color: var(--color-text-nav);
+}
+
+.menu li a:hover{
+  border-bottom: 2px solid var(--color-text-nav);
+  transition: border-bottom 0.3s ease-in-out;  
+}
+
+/* fim menu de navegação */
+
+/* Estilização Principal */
+
+.principal{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.principal h2{  
+  font-style:italic;
+  font-size: 45px;
+}
+
+.principal p{
+  font-size: 20px;
+}
+
+.submit{ 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit input{ 
+  width: 60%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 2px solid var(--background-nav);
+  border-radius: 10px 0 0 10px;
+  background: var(--background-body);
+
+  font-size: 25px;
+  text-align: center;  
+}
+
+.principal ::placeholder{
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.submit button{
+  border: 2px solid;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--background-body);
+  margin-top: 15px;
+  padding: 6px;
+  
+}
+
+.submit button:hover{
+  cursor: pointer;
+}
+
+/* fim estilização Principal */
+
+/* Estilização destaques */
+.destaques{
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+
+  margin-top: 25px;
+}
+
+.destaques img{
+  width: 100%;
+  margin-top: 15px;
+}
+
+.destaques-banner{
+  max-width: 100%;
+  width: 100%;
+  height: 322px;
+  object-fit: cover;
+  
+}
+
+/* fim estilização destaques */
+
+/* Estilização estreias e filmes em cartaz */
+
+section h3{
+  font-style: italic;
+  font-size: 35px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+section p{
+  font-style: italic;
+  font-size: 20px ;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;  
+}
+
+.cards img{
+  transition: 0.5s;
+  width: 100%;
+
+}
+
+.cards img:hover{
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+/* fim estilização estreias e filmes em cartaz */
+
+/* -------------------------------------------- FIM Estilização da HOME--------------------------------------------------- */
+
+/* ---------------------------------------------Estilização favoritos------------------------------------------------------ */
+.cards-fav{
+  margin-bottom: 10px;
+}
+
+#titulo-fav{
+  font-size: 45px;
+}
+
+#prg-fav{
+  font-size: 30px;
+}
+/* -------------------------------------------FIM Estilização favoritos----------------------------------------------------*/
+
+/* -------------------------------------------Estilização Login----------------------------------------------------*/
+
+.form-login{
+  background-color:  var(--background-nav);
+  width: 60%;  
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 40px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 30px;
+}
+
+.form-login h2{
+  color: var(--color-text-nav);
+  font-size: 50px;
+}
+
+.form-login p{
+  color: var(--color-text-nav);
+}
+
+.form-login p:first-of-type{
+  font-weight: bold;
+}
+
+.form-login a{
+  color: var(--color-text-nav);
+  text-decoration: underline;
+}
+
+.form-info{
+  width: 80%;
+  
+  
+}
+
+.form-info label{
+  color: var(--color-text-nav);
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+.form-info input{
+  width: 90%;
+  border: 2px solid var(--background-body);
+  border-radius: 10px;
+  padding: 10px;
+
+  background-color: var(--background-nav);
+
+  color: var(--color-text-nav);  
+}
+
+.form-info input::placeholder{
+  color: var(--color-text-nav);
+  font-weight: 100;   
+}
+
+.form-info button{
+  background-color: var(--background-nav);
+  border: none;
+  
+}
+
+.form-info button:hover{
+  cursor: pointer;
+}
+
+.form-senha{
+  display: flex;
+  gap: 5px;
+}
+
+/* ------------------------------------------- FIM Estilização Login----------------------------------------------------*/

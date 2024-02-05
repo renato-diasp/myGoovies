@@ -1,0 +1,18 @@
+/* Estilização rodapé */
+.rodape{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.rodape a{
+  margin: 10px;
+  padding: 10px;
+
+  color: var(--color-text);
+  font-style: italic;
+  font-size: 20px;
+}
+
+.rodape a:hover{
+  text-decoration: underline;
+}
