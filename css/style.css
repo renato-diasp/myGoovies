@@ -289,3 +289,26 @@ section p{
 }
 
 /* ------------------------------------------- FIM Estilização Login----------------------------------------------------*/
+/* -------------------------------------------  Estilização trailers----------------------------------------------------*/
+
+.viewmore{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.viewmore button{
+  background-color: #6f6e73;
+  color: #fff;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding: 5px 25px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.viewmore button:hover{
+  color: #6f6e73;
+  background-color: #fff;
+  transition: 0.5s;
+}
