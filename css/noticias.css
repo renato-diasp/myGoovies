@@ -1,6 +1,7 @@
 .noticias_titulo{
    margin: 5% 0;
    text-align: center;
+   filter: drop-shadow(0px 10px 10px #a3a3a3);
 }
 .noticias_titulo h1{
     font-family: var(--font-all);
@@ -16,6 +17,7 @@
     font-style: italic;
     font-size: 60px;
     margin: 15px 0px;
+   
     
 }
 .noticias_destaques{
@@ -30,7 +32,7 @@
     grid-template-columns: 1.4fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr ;
     grid-gap: 10px;
-    filter: drop-shadow(0px 19px 29px #707070);
+    filter: drop-shadow(0px 10px 10px #707070);
     
 }
 
@@ -115,7 +117,8 @@
 
 
 .mais_recentes{
-    
+    width: 100%;
+    align-items: center;
 }
 .imagem-card{
     width: 100px;
@@ -128,20 +131,10 @@
     font-weight: 800;
     font-style: italic;
     font-size: 50px;
-    margin: 20px 0;
+    margin: 100px 0 20px 20px;
 }
 
-.descricao_destaques{
-    background-color: #6F6E73;
-    border-radius: 5%;
-    
-}
 
-.card_destaques{
-    display: flex;
-    justify-content: space-between;
-    gap: 2px;  
-}
 
 .container_recentes{
     
@@ -151,8 +144,15 @@
 }
 
 .container_recentes img{
-    
-    width:400px;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
     border-radius: 5%;
+    margin: 0 auto;
+    margin: 0 2px;
 }
 
+
+.card_recentes{
+    margin: 10px;
+}
