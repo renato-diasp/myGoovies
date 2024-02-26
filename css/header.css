@@ -71,7 +71,7 @@
   }
 
   .menu li a{
-    color: var(--color-text);
+    color: var(--color-text-nav);
     font-size: 30px;
     border-bottom: 1px solid transparent;
   }
