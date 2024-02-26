@@ -24,17 +24,18 @@ async function insertieMovieData(){
     movieContainer.classList.add('unhidden-movie-container')
   
     movieContainer.innerHTML = `
-      <div id="movie-info" class="d-flex container">
+      <<div id="movie-info" class="d-flex container">
         <div id="movie-img"> 
           <img src="${data.Poster}" alt="${data.Title}">
         </div>
         <div id="movie-data" class="d-flex flex-column">
-           <p>Sinopse: ${plotTranslate}</p>
-           <p>Elenco: ${data.Actors}</p>
-            <p>Gênero: ${genreTranslate}</p>
+           <p><span>Sinopse:</span> ${plotTranslate}</p>
+           <p><span>Elenco:</span> ${data.Actors}</p>
+           <p><span>Gênero:</span> ${genreTranslate}</p>
+           <p><span>Ano:</span> ${data.Year}</p>
         </div>
       </div>
-          <button class="mt-5">Adicionar aos favoritos <i class="bi bi-star"></i></button>
+          <button class="mt-5" id="add-favorites" onclick="hiddenMovieInfo()">Adicionar aos favoritos <i class="bi bi-star"></i></button>
   `;
   }catch (error){
     notie.alert({type: 'error', text: error.message})
