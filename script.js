@@ -14,6 +14,13 @@ async function insertieMovieData(){
     const responseTranslate = await fetch(urlTranslate);
     const dataTranslate = await responseTranslate.json();
     const plotTranslate = dataTranslate.responseData.translatedText;
+
+    let urlTranslateGenre = `https://api.mymemory.translated.net/get?q=${data.Genre}!&langpair=en|pt-br`;
+    const responseTranslateGenre = await fetch(urlTranslateGenre);
+    const dataTranslateGenre = await responseTranslateGenre.json();
+    const genreTranslate = dataTranslateGenre.responseData.translatedText;
+
+    movieContainer.classList.add('unhidden-movie-container')
   
     movieContainer.innerHTML = `
       <div id="movie-info" class="d-flex container">
