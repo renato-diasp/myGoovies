@@ -132,6 +132,14 @@ body{
   border-radius: 10px;
 }
 
+#movie-info{  
+  gap: 20px; 
+}
+
+#movie-data span{
+  font-style: italic;
+}
+
 #movie-container button{
   width: 100%;
   padding: 0.5rem;
