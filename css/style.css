@@ -110,8 +110,26 @@ body{
 
 /* Estilização dos dados dinâmicos, consumo da API */
 
+.hidden-movie-container{
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.unhidden-movie-container{
+  visibility: visible;
+  transition: 0.5s;
+}
+
 #movie-container{
   width: 70%;
+  border: 0.1px solid #6d7075;
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+
+#movie-container img{
+  border-radius: 10px;
 }
 
 #movie-container button{
