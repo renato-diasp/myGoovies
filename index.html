@@ -7,9 +7,11 @@
   <meta name="keywords" content="Filmes, Sinopse, Títulos">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./src/notie-master/dist/notie.min.css">
   <title>Goovies - Home</title>
 </head>
 <body>
@@ -34,18 +36,21 @@
     </nav>
 
   
-   <main class="container_geral">
-      
+   <main class="container_geral">  
 
       <!-- Principal, consumo da API -->
       <div class="principal">
         <h2>Já sabe por onde começar?</h2>
         <p>Encontre em nosso site todos os filmes da atualidade</p>
         <div class="submit">
-          <input type="text" placeholder="Ex: Duna 2">
-          <button type="submit"><img src="./images/icones/search.svg" alt="Botão de busca para filmes pesquisados"></button>
+          <input type="text" placeholder="Ex: Duna 2" id="movie-name">
+          <input type="text" placeholder="Ano..." id="year-movie">
+          <button type="submit"><img src="./images/icones/search.svg" alt="Botão de busca para filmes pesquisados" id="search-movie"></button>
         </div>
-        
+
+        <article id="movie-container" class="mt-2">
+          
+        </article>        
       </div>
 
     
@@ -108,6 +113,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="key.js"></script>
+    <script src="./src/notie-master/dist/notie.min.js"></script>
   
 </body>
 </html>
