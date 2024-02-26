@@ -2,6 +2,7 @@ const searchMovieButton = document.getElementById('search-movie');
 const movieContainer = document.getElementById('movie-container');
 const movieName = document.getElementById('movie-name');
 const movieYear = document.getElementById('year-movie');
+const email = 'natovirtual@gmail.com'
 
 async function insertieMovieData(){   
   try{
@@ -10,12 +11,12 @@ async function insertieMovieData(){
     const data = await response.json();
     if(data.Error) throw new Error('Filme não encontrado');
 
-    let urlTranslate = `https://api.mymemory.translated.net/get?q=${data.Plot}!&langpair=en|pt-br`;
+    let urlTranslate = `https://api.mymemory.translated.net/get?q=${data.Plot}!&langpair=en|pt-br&de=${email}`;
     const responseTranslate = await fetch(urlTranslate);
     const dataTranslate = await responseTranslate.json();
     const plotTranslate = dataTranslate.responseData.translatedText;
 
-    let urlTranslateGenre = `https://api.mymemory.translated.net/get?q=${data.Genre}!&langpair=en|pt-br`;
+    let urlTranslateGenre = `https://api.mymemory.translated.net/get?q=${data.Genre}!&langpair=en|pt-br&de=${email}`;
     const responseTranslateGenre = await fetch(urlTranslateGenre);
     const dataTranslateGenre = await responseTranslateGenre.json();
     const genreTranslate = dataTranslateGenre.responseData.translatedText;
@@ -45,7 +46,7 @@ async function insertieMovieData(){
 async function generateMovieParameter (){
   if(movieName.value === '') throw new Error('Nome do filme deve ser informado');   
    
-  let urlTranslate = `https://api.mymemory.translated.net/get?q=${movieName.value}!&langpair=pt-br|en`;
+  let urlTranslate = `https://api.mymemory.translated.net/get?q=${movieName.value}!&langpair=pt-br|en&de=${email}`;
   const responseTranslate = await fetch(urlTranslate);
   const dataTranslate = await responseTranslate.json();
   const nameMovieTranslate = dataTranslate.responseData.translatedText;   
