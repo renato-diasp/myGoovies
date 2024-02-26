@@ -5,7 +5,7 @@ const movieYear = document.getElementById('year-movie');
 
 async function insertieMovieData(){   
   try{
-    let url = `http://www.omdbapi.com/?apikey=${key}&t=${generateMovieParameter()}${generateYearParameter()}`;  
+    let url = `https://www.omdbapi.com/?apikey=${key}&t=${generateMovieParameter()}${generateYearParameter()}`;  
     const response =  await fetch(url);
     const data = await response.json();
     if(data.Error) throw new Error('Filme não encontrado')    
