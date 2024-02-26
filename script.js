@@ -35,7 +35,7 @@ async function insertieMovieData(){
   
 }
 
-function generateMovieParameter (){
+async function generateMovieParameter (){
   if(movieName.value === '') throw new Error('Nome do filme deve ser informado');   
    
   let urlTranslate = `https://api.mymemory.translated.net/get?q=${movieName.value}!&langpair=pt-br|en`;
