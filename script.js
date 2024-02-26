@@ -30,7 +30,7 @@ async function insertieMovieData(){
         <div id="movie-data" class="d-flex flex-column">
            <p>Sinopse: ${plotTranslate}</p>
            <p>Elenco: ${data.Actors}</p>
-            <p>Gênero: ${data.Genre}</p>
+            <p>Gênero: ${genreTranslate}</p>
         </div>
       </div>
           <button class="mt-5">Adicionar aos favoritos <i class="bi bi-star"></i></button>
