@@ -24,7 +24,7 @@ async function insertieMovieData(){
     movieContainer.classList.add('unhidden-movie-container')
   
     movieContainer.innerHTML = `
-      <<div id="movie-info" class="d-flex container">
+      <div id="movie-info" class="d-flex container">
         <div id="movie-img"> 
           <img src="${data.Poster}" alt="${data.Title}">
         </div>
