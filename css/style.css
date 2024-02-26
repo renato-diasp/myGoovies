@@ -82,6 +82,11 @@ body{
   text-align: center;  
 }
 
+#year-movie{
+  width: 10%;
+  border-radius: 0;
+}
+
 .principal ::placeholder{
   text-align: center;
   padding: 10px;
@@ -93,7 +98,7 @@ body{
   border-radius: 0 10px 10px 0;
   background-color: var(--background-body);
   margin-top: 15px;
-  padding: 11px;
+  padding: 0.73rem;
   
 }
 
@@ -102,6 +107,36 @@ body{
 }
 
 /* fim estilização Principal */
+
+/* Estilização dos dados dinâmicos, consumo da API */
+
+#movie-container{
+  width: 70%;
+}
+
+#movie-container button{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 1.3rem;
+  transition: 0.2s;
+}
+
+#movie-container button:hover{
+  cursor: pointer;
+  background-color: var(--color-text-nav);
+  transition: 0.2s;
+  font-style: italic;
+}
+
+#movie-info{
+  justify-content: space-between;
+  gap: 20px; 
+}
+#movie-data{
+  justify-content: space-around;
+}
 
 /* Estilização destaques */
 .destaques{
